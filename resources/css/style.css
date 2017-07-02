@@ -1,12 +1,14 @@
-body {
+body, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
+}
+body {
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   background-color: black;
-  opacity: .9;
   text-align: center;
+  opacity: 0.9;
 }
 header {
   position: fixed;
@@ -19,14 +21,11 @@ header {
   border-bottom: 1px solid seashell;
   z-index: 1;
 }
-h1 {
-  display: none;
-}
 .logo img {
   height: 50px;
-  margin: auto 10px;
+  margin-left: 10px;
 }
-nav a {
+a {
   color: seashell;
   margin: 10px;
 }
@@ -34,14 +33,16 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  top: 69px;
+  padding-top: 70px;
+  width: 1200px;
+  margin: auto;
 }
 #mission {
   background-image: url("../images/img-mission-background.jpg");
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
   height: 700px;
   width: 1200px;
 }
@@ -50,17 +51,18 @@ nav a {
   flex-direction: column;
   justify-content: center;
   background-color: black;
-  width: 100%;
+  height: 120px;
 }
 h2 {
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 #featured {
-  display: flex;
-  flex-direction: column;
+  padding: 70px 0;
   width: 1000px;
-  margin-bottom: 50px;
-  padding-top: 50px;
+  margin: auto;
+}
+#featured h4 {
+  padding-bottom: 20px;
 }
 .tea-photos {
   display: flex;
@@ -72,16 +74,12 @@ h2 {
   height: 200px;
   margin: 10px 15px;
 }
-h4 {
-  margin-top: 0;
-}
 #locations {
   background-image: url("../images/img-locations-background.jpg");
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   height: 500px;
-  padding: 50px;
+  width: 1200px;
+  padding-top: 70px;
+  opacity: 1;
 }
 .locations-container {
   display: flex;
@@ -93,23 +91,22 @@ h4 {
   justify-content: space-around;
   width: 300px;
   height: 300px;
-  background-color: black;
-  opacity: 1;
   margin: 0 20px;
+  background-color: black;
 }
 footer {
   width: 100%;
 }
-h5 {
-  margin: 10px auto;
-}
 .contact {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 200px;
 }
 .copyright {
   text-align: left;
   margin-left: 20px;
+}
+h5 {
+  margin: 20px;
 }
